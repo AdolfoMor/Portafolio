@@ -1,5 +1,5 @@
 import { createApp } from 'vue'
-import VercelAnalytics from './plugins/vercel-analytics';
+import VercelAnalytics from './plugins/vercel';
 import './styles/main.css'
 import App from './App.vue'
 

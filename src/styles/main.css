@@ -2,4 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+html, body, #app {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1 0 auto; /* Crece y ocupa espacio disponible */
+}
+
+footer {
+  flex-shrink: 0; /* No se reduce, siempre visible abajo */
+}
 

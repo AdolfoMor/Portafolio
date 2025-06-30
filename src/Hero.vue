@@ -31,7 +31,7 @@
     </div>
 
     <!-- Scroll Indicator -->
-    <div class="absolute bottom-6 flex justify-center">
+    <div class="absolute bottom-20 flex justify-center">
       <div class="w-6 h-10 border-2 border-gray-400 dark:border-gray-300 rounded-full flex items-start justify-center p-1">
         <div class="w-1 h-1 bg-gray-400 dark:bg-gray-300 rounded-full animate-bounce"></div>
       </div>
@@ -61,7 +61,6 @@ onMounted(() => {
 </script>
 
 <style scoped>
-/* animación más suave y continua */
 @keyframes scroll-bounce {
   0%, 100% {
     transform: translateY(0);

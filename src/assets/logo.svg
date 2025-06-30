@@ -1,0 +1,10 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" fill="none">
+  <!-- Letra A -->
+  <path d="M50 150 L100 50 L150 150" stroke="#4F46E5" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Barra horizontal de la A -->
+  <line x1="75" y1="110" x2="125" y2="110" stroke="#6366F1" stroke-width="12" stroke-linecap="round"/>
+
+  <!-- Letra M integrada -->
+  <path d="M50 150 L70 100 L100 150 L130 100 L150 150" stroke="#4F46E5" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

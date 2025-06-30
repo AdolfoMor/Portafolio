@@ -55,7 +55,7 @@
 
       <!-- LinkedIn -->
       <a
-        href="www.linkedin.com/in/adolfo-moreno-hernandez-9b4864201"
+        href="https://www.linkedin.com/in/adolfo-moreno-hernandez-9b4864201"
         target="_blank"
         class="text-gray-700 dark:text-white hover:text-indigo-600 dark:hover:text-indigo-400 transition"
       >

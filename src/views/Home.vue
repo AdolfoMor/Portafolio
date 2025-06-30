@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <main class="h-screen overflow-y-auto snap-y snap-mandatory">
     <Hero />
     <About />
     <Projects />

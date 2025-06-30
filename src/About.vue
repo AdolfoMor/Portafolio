@@ -1,5 +1,11 @@
 <template>
-  <section class="bg-gray-50 dark:bg-gray-800 py-16 px-6 md:px-12">
+  <section
+    ref="sectionRef"
+    :class="[
+      'snap-start h-screen flex items-center justify-center bg-gray-50 dark:bg-gray-800 px-6 md:px-12 transition-all duration-700 ease-out',
+      isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
+    ]"
+  >
     <div class="max-w-4xl mx-auto text-center">
       <h2 class="text-3xl md:text-4xl font-bold text-gray-800 dark:text-white mb-6">
         Sobre mí
@@ -22,6 +28,25 @@
   </section>
 </template>
 
-<script setup></script>
+<script setup>
+import { ref, onMounted } from 'vue'
+
+const sectionRef = ref(null)
+const isVisible = ref(false)
+
+onMounted(() => {
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      if (entry.isIntersecting) {
+        isVisible.value = true
+        observer.unobserve(entry.target)
+      }
+    },
+    { threshold: 0.3 }
+  )
+
+  if (sectionRef.value) observer.observe(sectionRef.value)
+})
+</script>
 
 <style scoped></style>

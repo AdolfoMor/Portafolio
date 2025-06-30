@@ -52,28 +52,28 @@ const projects = [
     title: 'ICAT a Distancia',
     description:
       'ICAT a Distancia es una plataforma de capacitación en línea basada en Moodle, diseñada para ofrecer cursos gratuitos, gestión de usuarios, acceso a contenidos educativos y emisión automática de constancias digitales.',
-    image: './src/img/ICATADISTANCIA.png',
+    image: '/img/ICATADISTANCIA.png',
     link: 'https://icatadistancia.cdmx.gob.mx/',
   },
   {
     title: 'Certificación ICAT',
     description:
       'Una plataforma web desarrollada en Laravel que permite a los usuarios agendar citas para evaluaciones presenciales. El sistema gestiona el registro de usuarios, disponibilidad de fechas, asignación de evaluadores y generación de reportes.',
-    image: './src/img/CERTIFICACION.png',
+    image: '/img/CERTIFICACION.png',
     link: 'https://sii.icatadistancia.cdmx.gob.mx/',
   },
   {
     title: 'ICAT Digital',
     description:
       'Plataforma desarrollada con Laravel Jetstream para la gestión de cursos presenciales impartidos por el ICAT. Permite explorar cursos, registrarse y dar seguimiento en línea.',
-    image: './src/img/ICATDIGITAL.png',
+    image: '/img/ICATDIGITAL.png',
     link: 'https://icatdigital.cdmx.gob.mx/',
   },
   {
     title: 'Eje Crítico',
     description:
       'Plataforma basada en Moodle con sistema de pago en línea mediante Stripe para la inscripción a cursos virtuales de costo.',
-    image: './src/img/EJECRITICO.png',
+    image: '/img/EJECRITICO.png',
     link: 'https://plataforma.ejecritico.com/',
   },
 ]

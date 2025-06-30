@@ -80,11 +80,11 @@ onMounted(() => {
 /* Subir solo el contenido principal en móvil */
 @media (max-width: 639px) {
   .content-main {
-    transform: translateY(-20px);
+    transform: translateY(-90px);
   }
 
   .scroll-indicator {
-    bottom: 5rem; /* más cerca en móvil */
+    bottom: 15rem; /* más cerca en móvil */
   }
 }
 

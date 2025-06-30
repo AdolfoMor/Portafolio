@@ -3,7 +3,7 @@
     id="projects"
     ref="sectionRef"
     :class="[
-      'snap-start h-screen flex items-center justify-center bg-gray-100 dark:bg-gray-900 px-6 md:px-12 transition-all duration-700 ease-out overflow-y-auto',
+      'snap-start min-h-screen flex items-center justify-center bg-gray-100 dark:bg-gray-900 px-6 md:px-12 transition-all duration-700 ease-out scroll-mt-20',
       isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
     ]"
   >

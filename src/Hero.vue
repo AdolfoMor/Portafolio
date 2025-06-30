@@ -2,12 +2,12 @@
   <section
     ref="sectionRef"
     :class="[
-      'snap-start flex flex-col items-center justify-center relative bg-white dark:bg-gray-900 px-6 md:px-12 transition-all duration-700 ease-out',
-      isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6',
-      'min-h-[70vh] md:h-screen'
+      'snap-start snap-always h-screen flex flex-col items-center justify-center relative bg-white dark:bg-gray-900 px-6 md:px-12 transition-all duration-700 ease-out',
+      isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
     ]"
   >
-    <div class="max-w-4xl text-center z-10">
+    <!-- Contenido principal -->
+    <div class="max-w-4xl text-center z-10 content-main">
       <h1 class="text-4xl md:text-5xl font-extrabold text-gray-800 dark:text-white mb-4">
         ¡Hola! Soy <span class="text-indigo-600">Adolfo</span>
       </h1>
@@ -32,7 +32,7 @@
     </div>
 
     <!-- Scroll Indicator -->
-    <div class="absolute bottom-12 md:bottom-20 flex justify-center">
+    <div class="scroll-indicator absolute flex justify-center">
       <div class="w-6 h-10 border-2 border-gray-400 dark:border-gray-300 rounded-full flex items-start justify-center p-1">
         <div class="w-1 h-1 bg-gray-400 dark:bg-gray-300 rounded-full animate-bounce"></div>
       </div>
@@ -75,5 +75,23 @@ onMounted(() => {
 
 .animate-bounce {
   animation: scroll-bounce 1.2s infinite;
+}
+
+/* Subir solo el contenido principal en móvil */
+@media (max-width: 639px) {
+  .content-main {
+    transform: translateY(-20px);
+  }
+
+  .scroll-indicator {
+    bottom: 5rem; /* más cerca en móvil */
+  }
+}
+
+/* En escritorio se mantiene abajo */
+@media (min-width: 640px) {
+  .scroll-indicator {
+    bottom: 5rem;
+  }
 }
 </style>

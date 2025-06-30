@@ -1,5 +1,6 @@
 <template>
   <section
+    id="about"
     ref="sectionRef"
     :class="[
       'snap-start h-screen flex items-center justify-center bg-gray-50 dark:bg-gray-800 px-6 md:px-12 transition-all duration-700 ease-out',

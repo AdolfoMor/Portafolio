@@ -22,12 +22,14 @@
           Ver proyectos
         </a>
         <a
-          href="/cv.pdf"
-          target="_blank"
-          class="px-6 py-3 border border-indigo-600 text-indigo-600 rounded-lg hover:bg-indigo-50 dark:hover:bg-gray-800 transition duration-300"
+        href="/Adolfo%20Moreno%20Hernández_CV.pdf"
+        target="_blank"
+        class="px-6 py-3 border border-indigo-600 text-indigo-600 rounded-lg hover:bg-indigo-50 dark:hover:bg-gray-800 transition duration-300"
+        rel="noopener noreferrer"
         >
-          Descargar CV
+        Descargar CV
         </a>
+
       </div>
     </div>
 

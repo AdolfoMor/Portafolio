@@ -2,7 +2,7 @@
   <section
     ref="sectionRef"
     :class="[
-      'snap-start h-screen flex flex-col items-center justify-center relative bg-white dark:bg-gray-900 px-6 md:px-12 transition-all duration-700 ease-out',
+      'snap-start h-screen flex flex-col items-center justify-start md:justify-center relative bg-white dark:bg-gray-900 px-6 md:px-12 transition-all duration-700 ease-out pt-16 md:pt-0',
       isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
     ]"
   >
